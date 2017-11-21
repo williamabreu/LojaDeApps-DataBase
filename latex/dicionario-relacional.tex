@@ -1,0 +1,1006 @@
+\section{Dicionário de dados (Modelo Relacional)}
+
+\vspace{5mm}
+
+A seguir, está detalhado o dicionário de dados do projeto.
+
+
+\subsection{Tabelas}
+\vspace{3mm}
+
+\subsubsection{Usuario}
+
+\begin{center}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o nome no lugar de ---
+	\textbf{Tabela} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}  Usuario  \end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição no lugar de ---
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}} Representa um usuário cadastrado no sistema  \end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  login  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  email  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  senha  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(32)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  nome  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(30)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  tipo  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(10)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  credito  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  FLOAT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  diaNasce  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  mesNasce  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  anoNasce  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	\end{tabular}
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{Dispositivo}
+
+\begin{center}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o nome no lugar de ---
+	\textbf{Tabela} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}  Dispositivo  \end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição no lugar de ---
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}} Dispositivo ou máquina que o usuário possui  \end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  identificador  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(15)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  Usuario\_login  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  sistema  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  versao  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  modelo  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(10)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  certificado  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  BOOL  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  controleParental  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Sim  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  update  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  BOOL  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  notificacao  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  BOOL  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	\end{tabular}
+	
+	\begin{eqnarray}
+	\mathrm{Dispositivo[Usuario\_login] \rightarrow ^{B} Usuario[login]}
+	\end{eqnarray}
+	
+\end{center}
+
+\vspace{1mm}
+
+
+\subsubsection{Adquire}
+
+\begin{center}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o nome no lugar de ---
+	\textbf{Tabela} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}  Adquire  \end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição no lugar de ---
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}} Faz o relacionamento de aquisição de uma licença pelo usuário  \end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  Licenca\_registro  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  Usuario\_email  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  metodoPag  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(10)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Sim  \end{tabular} 
+	\\ \hline
+
+
+	\end{tabular}
+	
+	\begin{eqnarray}
+	\mathrm{Adquire[Licenca\_registro] \rightarrow ^{P} Licenca[registro]}\\
+	\mathrm{Adquire[Usuario\_email] \rightarrow ^{P} Usuario[email]}
+	\end{eqnarray}		
+	
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{Licenca}
+
+\begin{center}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o nome no lugar de ---
+	\textbf{Tabela} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}  Licenca  \end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição no lugar de ---
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}} Licença a qual o app está associado  \end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  registro  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  Aplicativo\_nroRegistro  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  tipo  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  preco  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  FLOAT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Sim  \end{tabular} 
+	\\ \hline
+
+
+	\end{tabular}
+	
+	\begin{eqnarray}
+	\mathrm{Licenca[Aplicativo\_nroRegistro] \rightarrow ^{B} Aplicativo[nroRegistro]}
+	\end{eqnarray}		
+	
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{Empresa}
+
+\begin{center}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o nome no lugar de ---
+	\textbf{Tabela} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}  Empresa  \end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição no lugar de ---
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}} Empresa desenvolvedora de um app  \end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  login  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  cnpj  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  senha  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(32)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  nome  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(30)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  logradouro  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  numero  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Sim  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  bairro  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Sim  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  cidade  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  pais  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  site  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Sim  \end{tabular} 
+	\\ \hline
+
+
+	\end{tabular}
+\end{center}
+
+\vspace{1mm}
+
+
+\subsubsection{Telefones}
+
+\begin{center}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o nome no lugar de ---
+	\textbf{Tabela} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}  Telefones  \end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição no lugar de ---
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}} Lista com os telefones para contato que uma empresa possui  \end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  telefone  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  Empresa\_cnpj  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+	\end{tabular}
+	
+	\begin{eqnarray}
+	\mathrm{Telefones[Empresa\_cnpj] \rightarrow ^{P} Empresa[cnpj]}
+	\end{eqnarray}
+	
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{Emails}
+
+\begin{center}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o nome no lugar de ---
+	\textbf{Tabela} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}  Emails  \end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição no lugar de ---
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}} Lista com os emails para contato que uma empresa possui  \end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  email  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  Empresa\_cnpj  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+	\end{tabular}
+	
+	\begin{eqnarray}
+	\mathrm{Emails[Empresa\_cnpj] \rightarrow ^{P} Empresa[cnpj]}
+	\end{eqnarray}		
+	
+\end{center}
+
+\vspace{1mm}
+
+
+\subsubsection{Aplicativo}
+
+\begin{center}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o nome no lugar de ---
+	\textbf{Tabela} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}  Aplicativo  \end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição no lugar de ---
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}} Representa um app cadastrado no sistema  \end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  nroRegistro  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  Empresa\_cnpj  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  nome  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  tamanho  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  genero  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(10)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Sim  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  versao  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  faixaEtaria  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Sim  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  downloads  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  nota  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  FLOAT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+	\end{tabular}
+	
+	\begin{eqnarray}
+	\mathrm{Aplicativo[Empresa\_cnpj] \rightarrow ^{B} Empresa[cnpj]}
+	\end{eqnarray}			
+	
+\end{center}
+
+\vspace{1mm}
+
+
+\subsubsection{Idiomas}
+
+\begin{center}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o nome no lugar de ---
+	\textbf{Tabela} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}  Idiomas  \end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição no lugar de ---
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}} Lista com os idiomas para os quais o app está disponível  \end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  idioma  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  Aplicativo\_nroRegistro  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+	\end{tabular}
+	
+	\begin{eqnarray}
+	\mathrm{Idiomas[Aplicativo\_nroRegistro] \rightarrow ^{P} Aplicativo[nroRegistro]}
+	\end{eqnarray}		
+	
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{Sistemas}
+
+\begin{center}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o nome no lugar de ---
+	\textbf{Tabela} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}  Sistemas  \end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição no lugar de ---
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}} Lista com os idiomas para os quais o app está disponível  \end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  sistema  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  Aplicativo\_nroRegistro  \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\\ \hline
+
+	\end{tabular}
+	
+	\begin{eqnarray}
+	\mathrm{Idiomas[Aplicativo\_nroRegistro] \rightarrow ^{P} Aplicativo[nroRegistro]}
+	\end{eqnarray}		
+	
+\end{center}
+
+\vspace{1mm}

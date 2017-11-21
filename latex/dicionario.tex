@@ -1,0 +1,672 @@
+\section{Dicionário de dados (Modelo ER)}
+
+\vspace{5mm}
+
+A seguir, está detalhado o dicionário de dados do projeto.
+
+
+\subsection{Entidades}
+\vspace{5mm}
+
+\subsubsection{CADASTRO}
+% ########################################################################
+% ####  CADASTRO
+% ########################################################################
+\label{cadastro}
+\begin{center}
+	%%\vspace{5mm}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o tipo entidade/relacionamento
+	\textbf{Tipo Entidade} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}CADASTRO\end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Representa um usuário ou uma empresa que tem acesso ao sistema\end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}login\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Identificação para acesso\\ do sistema (chave) \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}Cadeia de até 50\\ caracteres\end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}Não\end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}senha\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Senha para acesso\\ do sistema    \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Cadeia de 8 até\\ 32 caracteres  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}  Não   \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}nome\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Nome do cliente que\\ utiliza o sistema   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Cadeia de até 30\\ caracteres    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}  Não   \end{tabular} 
+	\\ \hline
+
+	\end{tabular}
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{USUARIO}
+% ########################################################################
+% ####  USUARIO
+% ########################################################################
+\label{usuario}
+
+\begin{center}
+	%\vspace{10mm}
+	\begin{tabular}{|p{2.0cm}|p{2.1cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+	\multicolumn{2}{|l|}{\textbf{Tipo Entidade}} & \multicolumn{3}{l|}{USUARIO}                                                                                                                                                                                                                                          \\ \hline
+	\multicolumn{2}{|l|}{\textbf{Descrição}}     & \multicolumn{3}{l|}{Representa um usuário cadastrado no sistema}                                                                                                                                                                                                      \\ \hline
+	\multicolumn{5}{|c|}{\textbf{Atributos}}                                                                                                                                                                                                                                                                             \\ \hline
+	\multicolumn{2}{|c|}{\textbf{Nome}}          & \multicolumn{1}{c|}{\textbf{Descrição}}                                                                                              & \multicolumn{1}{c|}{\textbf{Domínio}}                                                 & \multicolumn{1}{c|}{\textbf{Nullable}} \\ \hline
+	\multicolumn{2}{|l|}{email}                  & \begin{tabular}[c]{@{}l@{}}E-mail do usuário\\ (chave)\end{tabular}                                                      & \begin{tabular}[c]{@{}l@{}}Cadeia de até 50\\ caracteres\end{tabular}                 & Não                                    \\ \hline
+	\multicolumn{2}{|l|}{credito}                & \begin{tabular}[c]{@{}l@{}}Quantidade de créditos\\ que um usuário possui\end{tabular}                                              & \begin{tabular}[c]{@{}l@{}}Número real de\\ 0 até $\infty$\end{tabular}               & Não                                    \\ \hline
+	\multirow{3}{*}{dataNasce}       & dia       & Dia de nascimento                                                                                                                    & \begin{tabular}[c]{@{}l@{}}Número inteiro\\ de 1 até 31\end{tabular}                  & Não                                    \\ \cline{2-5} 
+									 & mes       & Mês de nascimento                                                                                                                    & \begin{tabular}[c]{@{}l@{}}Número inteiro\\ de 1 até 12\end{tabular}                  & Não                                    \\ \cline{2-5} 
+									 & ano       & Ano de nascimento                                                                                                                    & \begin{tabular}[c]{@{}l@{}}Número inteiro\\ de 1900 até $\infty$\end{tabular}         & Não                                    \\ \hline
+	\multicolumn{2}{|l|}{tipo}            & \begin{tabular}[c]{@{}l@{}}Indica o tipo de conta\\ utilizada\end{tabular} & \begin{tabular}[c]{@{}l@{}}Cadeia de até 10\\ caracteres\end{tabular} & Não                                    \\ 
+
+	\hline
+
+	\end{tabular}
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{DISPOSITIVO}
+% ########################################################################
+% ####  DISPOSITIVO
+% ########################################################################
+\label{dispositivo}
+
+\begin{center}
+	%\vspace{10mm}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o tipo entidade/relacionamento
+	\textbf{Tipo Entidade} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}DISPOSITIVO\end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Dispositivo ou máquina que o usuário possui\end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}identificador\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}Código de identificação\\ do dispositivo (chave)\end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}Cadeia de até 15\\ caracteres\end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}Não\end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}sistema\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}Sistema operacional do\\dispositivo\end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}Cadeia de até 20\\ caracteres\end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}Não\end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}versao\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}Número da versão do\\ dispositivo\end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}Cadeia de até 20\\ caracteres\end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}Não\end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}modelo\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}Modelo ou tipo do\\ dispositivo\end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}Cadeia de até 10\\ caracteres\end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}Não\end{tabular} 
+	\\ \hline
+
+	\end{tabular}
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{CONFIGURACAO}
+% ########################################################################
+% ####  CONFIGURACAO
+% ########################################################################
+\label{configuracao}
+
+\begin{center}
+	%\vspace{10mm}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o tipo entidade/relacionamento
+	\textbf{Tipo Entidade} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}CONFIGURACAO\end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Configuração que um dispositivo tem\end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}nomeUsuario\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Código de identificação\\ do usuário que fez\\ a configuração (chave\\ parcial)   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}Cadeia de até 50\\ caracteres \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}Não\end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}certificado\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Indica se o dispositivo\\ possui certificação    \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Valor booleano    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}} Não    \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}controleParental\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Indica a idade a partir da\\ qual se deve bloquear\\ aplicativos não\\ recomendados   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Número inteiro\\ de 10 até 18   \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}  Sim   \end{tabular} 
+	\\ \hline
+
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}update\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Indica se o dispositivo\\ deve ser atualizado \\ automaticamente \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Valor booleano    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}  Não   \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}notificacao\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Indica se o dispositivo\\ deve ser notificado se\\ houver algum app\\ desatualizado   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Valor booleano    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}} Não    \end{tabular} 
+	\\ \hline
+
+	\end{tabular}
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{APLICATIVO}
+% ########################################################################
+% ####  APLICATIVO
+% ########################################################################
+\label{aplicativo}
+
+\begin{center}
+	%\vspace{10mm}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o tipo entidade/relacionamento
+	\textbf{Tipo Entidade} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}APLICATIVO\end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Representa um app cadastrado no sistema\end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}nroRegistro\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}Número de registro do\\ aplicativo (chave)\end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}Número inteiro de\\ 0 até $\infty$\end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}Não\end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}nome\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Nome do aplicativo   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Cadeia de até 20\\ caracteres    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}} Não    \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}versao\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Versão do aplicativo   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}Cadeia de até 20\\ caracteres\end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}} Não    \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}faixaEtaria\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Restrição de uso do\\ aplicativo por idade  \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Número inteiro de\\ 10 até 18    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}} Sim    \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}idiomas\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Idiomas disponíveis para\\ o aplicativo   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Cadeia de até 20\\ caracteres    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}  Não   \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}sistemas\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Sistemas operacionais em\\ que o app é compatível \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Cadeia de até 20\\ caracteres    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}  Não   \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}genero\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Gênero ou finalidade\\ do aplicativo   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Cadeia de até 10\\ caracteres    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}} Sim    \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}tamanho\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Tamanho do arquivo de\\ download em bytes   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  Número inteiro\\ de 0 até $\infty$   \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}  Não   \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}nota\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Nota média de avaliação\\ do app pelos usuários   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Número real de 0 até 1  \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}} Sim    \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}downloads\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Número de downloads\\ realizados   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Número inteiro\\ de 0 até $\infty$    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}} Não    \end{tabular} 
+	\\ \hline
+
+	\end{tabular}
+\end{center}
+
+\vspace{10cm}
+
+\subsubsection{LICENCA}
+% ########################################################################
+% ####  LICENCA
+% ########################################################################
+\label{licenca}
+
+	\begin{center}
+	%\vspace{10mm}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o tipo entidade/relacionamento
+	\textbf{Tipo Entidade} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}LICENCA\end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição
+	\textbf{Descrição} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Liceça a qual o app está associado\end{tabular}} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}registro\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Número de registro\\ da licença (chave)   \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  Número inteiro\\ de 0 até $\infty$   \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}  Não   \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}tipo\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Tipo de licença\\ associada ao app    \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Cadeia de até 20\\ caracteres    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}} Não    \end{tabular} 
+	\\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}preco\end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}} Preço de aquisição\\ da licença    \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}} Número real de\\ 0 até $\infty$    \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}} Sim    \end{tabular} 
+	\\ \hline
+
+
+	\end{tabular}
+\end{center}
+
+\vspace{1mm}
+
+
+\subsubsection{EMPRESA}
+% ########################################################################
+% ####  EMPRESA
+% ########################################################################
+\label{empresa}
+
+\begin{center}
+	%\vspace{10mm}
+	\begin{tabular}{|p{2.0cm}|p{2.1cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	% colar aqui 
+	\hline
+	\multicolumn{2}{|l|}{\textbf{Tipo Entidade}} & \multicolumn{3}{l|}{EMPRESA}                                                                                                                                                                          \\ \hline
+	\multicolumn{2}{|l|}{\textbf{Descrição}}     & \multicolumn{3}{l|}{Empresa desenvolvedora de um app}                                                                                                                                                 \\ \hline
+	\multicolumn{5}{|c|}{\textbf{Atributos}}                                                                                                                                                                                                             \\ \hline
+	\multicolumn{2}{|c|}{\textbf{Nome}}          & \multicolumn{1}{c|}{\textbf{Descrição}}                                         & \multicolumn{1}{c|}{\textbf{Domínio}}                                      & \multicolumn{1}{c|}{\textbf{Nullable}} \\ \hline
+	\multicolumn{2}{|l|}{cnpj}                   & \begin{tabular}[c]{@{}l@{}}Número de registro\\ da empresa (chave)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Número inteiro de\\ 0 até $\infty$\end{tabular} & Não                                    \\ \hline
+	\multirow{3}{*}{contato}     & site          & \begin{tabular}[c]{@{}l@{}}Site para contato ou\\ suporte\end{tabular}         & \begin{tabular}[c]{@{}l@{}}Cadeia de até 50\\ caracteres\end{tabular}      & Sim                                    \\ \cline{2-5} 
+								 & telefones     & \begin{tabular}[c]{@{}l@{}}Telefones para contato\\ ou suporte\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Cadeia de até 20\\ caracteres\end{tabular}      & Sim                                    \\ \cline{2-5} 
+								 & emails        & \begin{tabular}[c]{@{}l@{}}E-mails para contato ou\\ suporte\end{tabular}       & \begin{tabular}[c]{@{}l@{}}Cadeia de até 50\\ caracteres\end{tabular}      & Não                                    \\ \hline
+	\multirow{5}{*}{endereço}    & logradouro    & \begin{tabular}[c]{@{}l@{}}Localidade da sede da\\ empresa\end{tabular}         & \begin{tabular}[c]{@{}l@{}}Cadeia de até 50\\ caracteres\end{tabular}      & Não                                    \\ \cline{2-5} 
+								 & numero        & \begin{tabular}[c]{@{}l@{}}Número do local da \\ sede da empresa\end{tabular}   & \begin{tabular}[c]{@{}l@{}}Número inteiro\\ de 0 até $\infty$\end{tabular} & Sim                                    \\ \cline{2-5} 
+								 & bairro        & \begin{tabular}[c]{@{}l@{}}Bairro onde se localiza \\ a empresa\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Cadeia de até 20\\ caracteres\end{tabular}      & Sim                                    \\ \cline{2-5} 
+								 & cidade        & \begin{tabular}[c]{@{}l@{}}Cidade onde se localiza \\ a empresa\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Cadeia de até 20\\ caracteres\end{tabular}      & Não                                    \\ \cline{2-5} 
+								 & pais          & \begin{tabular}[c]{@{}l@{}}País onde se localiza \\ a empresa\end{tabular}      & \begin{tabular}[c]{@{}l@{}}Cadeia de até 20\\ caracteres\end{tabular}      & Não                                    \\ \hline
+	\end{tabular}
+\end{center}
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+%\vspace{9mm}
+\subsection{Relacionamentos}
+\vspace{5mm}
+
+
+\subsubsection{PRODUZ}
+% ########################################################################
+% ####  PRODUZ
+% ########################################################################
+\label{produz}
+
+\begin{center}
+	%%\vspace{5mm}
+	\begin{tabular}{|p{4.5cm}|p{12.9cm}|}
+	\hline
+
+	% Digitar o tipo entidade/relacionamento
+	\textbf{Tipo Relacionamento} & PRODUZ
+	\\ \hline
+
+	% Digitar descrição
+	\textbf{Descrição} & Uma empresa produz pelo menos 1 aplicativo ou mais e um aplicativo é produzido por uma única empresa
+	\\ \hline
+
+	\end{tabular}
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{POSSUI}
+% ########################################################################
+% ####  POSSUI
+% ########################################################################
+\label{possui}
+
+\begin{center}
+	%\vspace{10mm}
+	\begin{tabular}{|p{4.5cm}|p{12.9cm}|}
+	\hline
+
+	% Digitar o tipo entidade/relacionamento
+	\textbf{Tipo Relacionamento} & POSSUI
+	\\ \hline
+
+	% Digitar descrição
+	\textbf{Descrição} & Um usuário possui nenhum ou vários dispositivos e um dispositivo é possuído por exatamente 1 usuário
+	\\ \hline
+
+	\end{tabular}
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{TEM}
+% ########################################################################
+% ####  TEM
+% ########################################################################
+\label{tem}
+
+\begin{center}
+	%\vspace{10mm}
+	\begin{tabular}{|p{4.5cm}|p{12.9cm}|}
+	\hline
+
+	% Digitar o tipo entidade/relacionamento
+	\textbf{Tipo Relacionamento} & TEM
+	\\ \hline
+
+	% Digitar descrição
+	\textbf{Descrição} & Um dispositivo tem obrigatoriamente 1 configuração e uma configuração é tida por obrigatoriamente 1 dispositivo
+	\\ \hline
+	\end{tabular}
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{ASSOCIA}
+% ########################################################################
+% ####  ASSOCIA
+% ########################################################################
+\label{associa}
+
+\begin{center}
+	%\vspace{10mm}
+	\begin{tabular}{|p{4.5cm}|p{12.9cm}|}
+	\hline
+
+	% Digitar o tipo entidade/relacionamento
+	\textbf{Tipo Relacionamento} & ASSOCIA
+	\\ \hline
+
+	% Digitar descrição
+	\textbf{Descrição} & Um aplicativo está associado a pelo menos 1 licença ou mais e uma licença está associada a exatamente 1 aplicativo
+	\\ \hline
+
+	\end{tabular}
+\end{center}
+
+\vspace{1mm}
+
+\subsubsection{ADQUIRE}
+% ########################################################################
+% ####  ADQUIRE
+% ########################################################################
+\label{adquire}
+
+\begin{center}
+	%\vspace{10mm}
+	\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|p{3cm}|}
+	\hline
+
+	% Digitar o tipo entidade/relacionamento
+	\textbf{Tipo Relacionamento} & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}ADQUIRE\end{tabular}} 
+	\\ \hline
+
+	% Digitar descrição
+	\textbf{Descrição} & \multicolumn{3}{p{12cm}|}{Um usuário adquire nenhuma, 1 ou mais licenças e uma licença é adquirida por nenhum, 1 ou vários usuários} 
+	\\ \hline
+
+	\multicolumn{4}{|c|}{\textbf{Atributos}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Domínio}} & \multicolumn{1}{c|}{\textbf{Nullable?}} \\ \hline
+
+	% Nome:
+	\begin{tabular}[c]{@{}l@{}}  metodoPag      \end{tabular} & 
+
+	% Descrição:
+	\begin{tabular}[c]{@{}l@{}}  Método de pagamento\\ utlizado na aquisição     \end{tabular} & 
+
+	% Domínio:
+	\begin{tabular}[c]{@{}l@{}}  Cadeia de até 10\\ caracteres      \end{tabular} & 
+
+	% Nullable?:
+	\begin{tabular}[c]{@{}l@{}}  Sim      \end{tabular}
+	\\ \hline
+
+	\end{tabular}
+\end{center}
+
+
+
+

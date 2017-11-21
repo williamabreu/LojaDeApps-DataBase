@@ -1,0 +1,64 @@
+\begingroup
+
+\section{Introdução}
+\vspace{5mm}
+
+
+O objetivo deste documento é apresentar e explicar o trabalho denominado \textbf{Banco de Dados}, cujo tema adotado é \textbf{Loja de Apps}, de forma a que o leitor possa compreender como foi desenvolvido, como ele foi modelado e como é a relação de suas partes integrantes.\\
+
+O objetivo deste projeto é modelar um banco de dados para futuramente implementar com os conhecimentos adquiridos na disciplina de Introdução a Banco de Dados ministrada pelo Prof. Dr. Denilson Alves Pereira, lotado no Departamento de Ciência da Computação na Universidade Federal de Lavras.\\
+
+
+
+\section{Descrição}
+\vspace{5mm}
+
+
+O problema modelado neste projeto remete-se a um sistema de uma loja de aplicativos para computador, que será denominado ao longo do trabalho por Loja de Apps. Dessa forma, o projeto foi modelado utilizando-se o Modelo de Entidades e Relacionamentos (modelo ER) para representar o problema através de um formato que futuramente facilitará o mapeamento para o Modelo Relacional e a implementação do banco de dados para o armazenamento das informações necessárias. Utilizou-se o software TerraER para demonstrar e modelar as relações e as entidades que o problema exige e o MySQL Workbench para construir o diagrama de Crow's Foot e determinar os domínios e as regras do banco de dados.\\
+
+Basicamente, são armazenados na Loja de Apps:
+
+\begin{itemize}
+
+\item dados do cadastro, sendo ele especializado exclusivamente em um usuário comum ou uma empresa desenvolvedora;
+\item os dados dos dispositivos que estão aptos a utilizarem os aplicativos disponíveis;
+\item os dados dos aplicativos que a loja oferece;
+\item as licenças de uso que são geradas para cada relacionamento entre aplicativo e usuário.
+
+\end{itemize}
+
+\vspace{2mm}
+
+
+
+\subsection{Cadastro de usuários e desenvolvedores}
+
+
+A Loja de Apps é desenvolvida com o objetivo de fornecer um meio de venda de aplicativos desenvolvidos por um empresa registrada aos usuários finais, ou seja, é a intermediária nessa transação. Por isso, três tipos entidade são fundamentais no banco de dados do sistema: o usuário e a empresa, além de um tipo cadastro, do qual os usuários e as empresas herdam os atributos. A entidade cadastro será responsável por permitir o login no sistema de forma unificada, pois usuários e empresas acessarão o sistema a partir de uma tela única. Além do mais, no momento do cadastro no sistema, quem estiver cadastrando, em um primeiro momento, será obrigado a escolher uma chave de login, uma senha e um nome para efetivar o cadastro, escolhendo sua especialização no sistema entre usuário ou empresa posteriormente. Vale ressaltar que para um dado cadastro na Loja de Apps, ou esse cadastro irá se referir a uma empresa ou a um usuário, não podendo ser os dois simultaneamente. A chave de login escolhida deve ser única no sistema.\\
+
+O cadastro especializado de um usuário final herda os três atributos do tipo cadastro e possui o e-mail de usuário como uma chave para acesso ao sistema, uma vez que um e-mail qualquer é único. Também é necessário armazenar informações a respeito do tipo de usuário que se trata --- se é um usuário de utilização individual ou familiar ---, quantos créditos ele possui na loja e a data de nascimento --- que será usada para verificar a idade e efetuar devidos bloqueios de conteúdo de acordo com a política de classificação indicativa de apps.\\
+
+O cadastro especializado para empresa também herda os atributos já ditos e possui seu cnpj como chave além de informações básicas para contato ou suporte, como site, e-mail e telefones bem como o endereço de sede. Em geral, mantém dados que permitem comprobação da legalidade da empresa desenvolvedora.\\
+
+
+
+\subsection{Dispositivos de um usuário}
+
+Dispositivo é um tipo entidade que tem relacionamento direto como o usuário, pois um usuário deve possuir de um aparelho para poder ter acesso aos aplicativos da loja. Cada dispositivo cadastrado no banco de dados precisa estar associado a um usuário obrigatoriamente. O usuário não precisa estar associado a pelo menos um dispositivo pois caso ele tenha perdido o aparelho, isso não afete a integridade do sistema, porém é possível possuir vários dispositivos. Assim, ficam salvos todos os registros de dispositivos do usuário.\\
+
+Também é mantido salvos dados referentes às configurações da Loja de Apps de cada dispositivo, tendo informações sobre certificação, controle parental, atualizações e notificações.\\
+
+
+
+\subsection{Aplicativos desenvolvidos}
+
+
+Os aplicativos cadastrados no sistema são desenvolvidos pelas empresas e acessíveis aos usuários finais através da aquisição de licenças de uso por parte deles. Assim, uma empresa cadastra o aplicativo para a venda no sistema, informando todos os dados referentes ao número chave de registro e nome do app na loja, além de versão, idiomas disponíveis, público destinado (faixa etária e gênero) e tamanho do download. O sistema da loja também mantém armazenado quantas vezes o app foi baixado pelos usuários e a nota média de avaliações que o público deu a ele.\\
+
+Como o acesso de um usuário ao aplicativo depende da aquisição de uma licença, a empresa produtora também deve associar uma licença para cada app que for desenvolvido, sendo informado na licença sua chave de registro, se é uma licença comercial ou de código aberto além do preço de aquisição da mesma. \\
+
+O relacionamento entre licença e aplicativo representa que um aplicativo pode ter várias licenças, sendo uma para cada usuário, mas cada uma dessas licenças está associada ao mesmo aplicativo. Quando um usuário comprar uma licença, deve ser informado na transação qual foi o método de pagamento utilizado.\\
+
+
+
+\endgroup
