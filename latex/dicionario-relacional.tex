@@ -2,7 +2,7 @@
 
 \vspace{5mm}
 
-A seguir, está detalhado o dicionário de dados do projeto.
+A seguir, está detalhado o dicionário de dados do projeto. Os nomes dos atributos sublinhados se tratam de chaves, sendo que se houver mais de um nome sublinhado, a chave da tabela é a união de todas elas. As regras de propagação para chaves estrangeiras são dadas abaixo da respectiva tabela, se houver. 
 
 
 \subsection{Tabelas}
@@ -27,10 +27,11 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  login  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{login}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Identificação para acesso\\
+do sistema   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
@@ -41,10 +42,10 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  email  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{email}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  E-mail do usuário   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
@@ -58,7 +59,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  senha  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Senha para acesso\\
+do sistema   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(32)  \end{tabular} & 
@@ -72,7 +74,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  nome  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Nome do cliente que\\
+utiliza o sistema   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(30)  \end{tabular} & 
@@ -86,7 +89,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  tipo  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Indica o tipo de conta\\
+utilizada   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(10)  \end{tabular} & 
@@ -100,7 +104,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  credito  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Quantidade de créditos\\
+que um usuário possui   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  FLOAT  \end{tabular} & 
@@ -114,7 +119,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  diaNasce  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Dia de nascimento   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -128,7 +133,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  mesNasce  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Mês de nascimento   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -142,7 +147,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  anoNasce  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Ano de nascimento   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -156,6 +161,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 \end{center}
 
 \vspace{1mm}
+
+\newpage
 
 \subsubsection{Dispositivo}
 
@@ -176,10 +183,11 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  identificador  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{identificador}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Código de identificação\\
+do dispositivo   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(15)  \end{tabular} & 
@@ -193,7 +201,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  Usuario\_login  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Chave estrangeira para\\ o usuário proprietário do\\ dispositivo   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
@@ -207,7 +215,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  sistema  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Sistema operacional do\\
+dispositivo   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
@@ -221,7 +230,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  versao  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Número da versão do\\
+dispositivo   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
@@ -235,7 +245,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  modelo  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Modelo ou tipo do\\
+dispositivo   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(10)  \end{tabular} & 
@@ -249,7 +260,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  certificado  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Indica se o dispositivo\\
+possui certificação   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  BOOL  \end{tabular} & 
@@ -263,7 +275,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  controleParental  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Indica a idade a partir da\\
+qual se deve bloquear\\  aplicativos não\\ recomendados  \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -277,7 +290,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  update  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Indica se o dispositivo\\ deve ser atualizado\\
+automaticamente   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  BOOL  \end{tabular} & 
@@ -291,7 +305,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  notificacao  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Indica se o dispositivo\\
+deve ser notificado se\\ houver algum app\\ desatualizado   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  BOOL  \end{tabular} & 
@@ -311,6 +326,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 \vspace{1mm}
 
+\newpage
 
 \subsubsection{Adquire}
 
@@ -331,10 +347,10 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  Licenca\_registro  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{Licenca\_registro}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Chave estrangeira para\\ a licença referida   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -345,10 +361,10 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  Usuario\_email  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{Usuario\_email}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Chave estrangeira para\\ o usuário referido  \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
@@ -362,7 +378,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  metodoPag  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Método de pagamento\\
+utilizado na aquisição   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(10)  \end{tabular} & 
@@ -402,10 +419,11 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  registro  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{registro}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Número de registro\\
+da licença   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -419,7 +437,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  Aplicativo\_nroRegistro  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Chave estrangeira para\\ o aplicativo licenciado   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -433,7 +451,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  tipo  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Tipo de licença\\
+associada ao app   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
@@ -447,7 +466,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  preco  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Preço de aquisição\\
+da licença   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  FLOAT  \end{tabular} & 
@@ -466,6 +486,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 \end{center}
 
 \vspace{1mm}
+\newpage
 
 \subsubsection{Empresa}
 
@@ -486,10 +507,11 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  login  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{login}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Identificação para acesso\\
+do sistema   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
@@ -500,10 +522,11 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  cnpj  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{cnpj}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Número de registro\\
+da empresa   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -517,7 +540,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  senha  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Senha para acesso\\
+do sistema   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(32)  \end{tabular} & 
@@ -531,7 +555,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  nome  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Nome do cliente que\\
+utiliza o sistema   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(30)  \end{tabular} & 
@@ -545,7 +570,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  logradouro  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Localidade da sede da\\
+empresa   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
@@ -559,7 +585,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  numero  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Número do local da\\
+sede da empresa   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -573,7 +600,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  bairro  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Bairro onde se localiza\\
+a empresa   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
@@ -587,7 +615,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  cidade  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Cidade onde se localiza\\
+a empresa   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
@@ -601,7 +630,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  pais  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  País onde se localiza\\
+a empresa   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
@@ -615,7 +645,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  site  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Site para contato ou\\
+suporte   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
@@ -629,6 +660,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 \end{center}
 
 \vspace{1mm}
+\newpage
 
 
 \subsubsection{Telefones}
@@ -650,10 +682,11 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  telefone  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{telefone}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Telefone para contato\\
+ou suporte   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
@@ -664,10 +697,10 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  Empresa\_cnpj  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{Empresa\_cnpj}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Chave estrangeira para\\ a empresa referida   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -705,10 +738,11 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  email  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{email}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  E-mail para contato ou\\
+suporte   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(50)  \end{tabular} & 
@@ -719,10 +753,10 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  Empresa\_cnpj  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{Empresa\_cnpj}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Chave estrangeira para\\ a empresa referida     \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -740,6 +774,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 \end{center}
 
 \vspace{1mm}
+\newpage
 
 
 \subsubsection{Aplicativo}
@@ -761,10 +796,11 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  nroRegistro  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{nroRegistro}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Número de registro do\\
+aplicativo   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -778,7 +814,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  Empresa\_cnpj  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Chave estrangeira para\\ a empresa desenvolvedora   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -792,7 +828,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  nome  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Nome do aplicativo   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
@@ -806,7 +842,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  tamanho  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Tamanho do arquivo de\\
+download em bytes   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -820,7 +857,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  genero  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Gênero ou finalidade\\
+do aplicativo   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(10)  \end{tabular} & 
@@ -834,7 +872,7 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  versao  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Versão do aplicativo   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
@@ -848,7 +886,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  faixaEtaria  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Restrição de uso do\\
+aplicativo por idade   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -862,7 +901,8 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  downloads  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Número de downloads\\
+realizados   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -876,13 +916,14 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\begin{tabular}[c]{@{}l@{}}  nota  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Nota média de avaliação\\
+do app pelos usuários   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  FLOAT  \end{tabular} & 
 
 	% Nullable?:
-	\begin{tabular}[c]{@{}l@{}}   Não  \end{tabular} 
+	\begin{tabular}[c]{@{}l@{}}   Sim  \end{tabular} 
 	\\ \hline
 
 	\end{tabular}
@@ -893,7 +934,6 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	
 \end{center}
 
-\vspace{1mm}
 
 
 \subsubsection{Idiomas}
@@ -915,10 +955,11 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  idioma  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{idioma}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Idioma disponível para\\
+o aplicativo   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
@@ -929,10 +970,10 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  Aplicativo\_nroRegistro  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{Aplicativo\_nroRegistro}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Chave estrangeira para\\ o aplicativo referido   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 
@@ -970,10 +1011,10 @@ A seguir, está detalhado o dicionário de dados do projeto.
 
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  sistema  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{sistema}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Sistema operacional em\\ que o app é compatível  \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  VARCHAR(20)  \end{tabular} & 
@@ -983,10 +1024,10 @@ A seguir, está detalhado o dicionário de dados do projeto.
 	\\ \hline
 
 	% Nome:
-	\begin{tabular}[c]{@{}l@{}}  Aplicativo\_nroRegistro  \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  \underline{Aplicativo\_nroRegistro}  \end{tabular} & 
 
 	% Descrição:
-	\begin{tabular}[c]{@{}l@{}}  ---   \end{tabular} & 
+	\begin{tabular}[c]{@{}l@{}}  Chave estrangeira para\\ o aplicativo referido   \end{tabular} & 
 
 	% Domínio:
 	\begin{tabular}[c]{@{}l@{}}  INT  \end{tabular} & 

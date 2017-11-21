@@ -1,0 +1,34 @@
+\BOOKMARK [1][-]{section.1}{Introdu\347\343o}{}% 1
+\BOOKMARK [1][-]{section.2}{Descri\347\343o}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Cadastro de usu\341rios e desenvolvedores}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Dispositivos de um usu\341rio}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Aplicativos desenvolvidos}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Diagrama ER}{}% 6
+\BOOKMARK [1][-]{section.4}{Dicion\341rio de dados \(Modelo ER\)}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Entidades}{section.4}% 8
+\BOOKMARK [3][-]{subsubsection.4.1.1}{CADASTRO}{subsection.4.1}% 9
+\BOOKMARK [3][-]{subsubsection.4.1.2}{USUARIO}{subsection.4.1}% 10
+\BOOKMARK [3][-]{subsubsection.4.1.3}{DISPOSITIVO}{subsection.4.1}% 11
+\BOOKMARK [3][-]{subsubsection.4.1.4}{CONFIGURACAO}{subsection.4.1}% 12
+\BOOKMARK [3][-]{subsubsection.4.1.5}{APLICATIVO}{subsection.4.1}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.6}{LICENCA}{subsection.4.1}% 14
+\BOOKMARK [3][-]{subsubsection.4.1.7}{EMPRESA}{subsection.4.1}% 15
+\BOOKMARK [2][-]{subsection.4.2}{Relacionamentos}{section.4}% 16
+\BOOKMARK [3][-]{subsubsection.4.2.1}{PRODUZ}{subsection.4.2}% 17
+\BOOKMARK [3][-]{subsubsection.4.2.2}{POSSUI}{subsection.4.2}% 18
+\BOOKMARK [3][-]{subsubsection.4.2.3}{TEM}{subsection.4.2}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.4}{ASSOCIA}{subsection.4.2}% 20
+\BOOKMARK [3][-]{subsubsection.4.2.5}{ADQUIRE}{subsection.4.2}% 21
+\BOOKMARK [1][-]{section.5}{Diagrama Relacional}{}% 22
+\BOOKMARK [1][-]{section.6}{Dicion\341rio de dados \(Modelo Relacional\)}{}% 23
+\BOOKMARK [2][-]{subsection.6.1}{Tabelas}{section.6}% 24
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Usuario}{subsection.6.1}% 25
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Dispositivo}{subsection.6.1}% 26
+\BOOKMARK [3][-]{subsubsection.6.1.3}{Adquire}{subsection.6.1}% 27
+\BOOKMARK [3][-]{subsubsection.6.1.4}{Licenca}{subsection.6.1}% 28
+\BOOKMARK [3][-]{subsubsection.6.1.5}{Empresa}{subsection.6.1}% 29
+\BOOKMARK [3][-]{subsubsection.6.1.6}{Telefones}{subsection.6.1}% 30
+\BOOKMARK [3][-]{subsubsection.6.1.7}{Emails}{subsection.6.1}% 31
+\BOOKMARK [3][-]{subsubsection.6.1.8}{Aplicativo}{subsection.6.1}% 32
+\BOOKMARK [3][-]{subsubsection.6.1.9}{Idiomas}{subsection.6.1}% 33
+\BOOKMARK [3][-]{subsubsection.6.1.10}{Sistemas}{subsection.6.1}% 34
