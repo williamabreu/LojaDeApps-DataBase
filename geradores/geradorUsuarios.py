@@ -7,25 +7,25 @@ lista = [
     'Zambaldina Júdice',
     'Gerson Hernandes',
     'Cristiano Ribas',
-    'Fabíola Harém',
-    'Virgínia Póvoas',
-    'Valério Colares',
-    'Damião Frade',
+    'Fabiola Harém',
+    'Virginia Póvoas',
+    'Valerio Colares',
+    'Damiao Frade',
     'Olavo Docarvalho',
-    'Ágata Ribas',
+    'Agata Ribas',
     'Solano Amado',
     'Henriqueta Ribeiro',
     'Catarino Coelho',
     'Arminda Simão',
     'Nicolau Barroso',
-    'Débora Ferro',
+    'Debora Ferro',
     'Amanda Nuds',
     'Aleixo Velasques'
 ]
 
 
 def gerarDinheiro():
-	return random.randint(0, 1500) + random.randint(0,99) / 100
+	return random.randint(0, 500) + random.randint(0,99) / 100
 
 def gerarTipoConta():
 	x = random.randint(0,2)
@@ -37,7 +37,7 @@ def gerarTipoConta():
 		return 'estudante'
 	
 def gerarAno():
-	return random.randint(1938, 2009)
+	return random.randint(1960, 2012)
 
 def gerarMes():
 	return random.randint(1,12)
@@ -45,8 +45,9 @@ def gerarMes():
 def gerarDia():
 	return random.randint(1,28)
 
-for nome in lista:
-	print( "call insertUsuario('{0}', '{0}@ufla.br', 'senha-{0}', '{1}', '{2}', {3}, '{4}-{5:02d}-{6:02d}');".format(
-			nome.split()[0].lower(), nome, gerarTipoConta(), gerarDinheiro(), gerarAno(), gerarMes(), gerarDia()
+if __name__ == '__main__':
+	for nome in lista:
+		print( "call insertUsuario('{0}', '{0}@ufla.br', 'senha-{0}', '{1}', '{2}', {3}, '{4}-{5:02d}-{6:02d}');".format(
+				nome.split()[0].lower(), nome, gerarTipoConta(), gerarDinheiro(), gerarAno(), gerarMes(), gerarDia()
+			)
 		)
-	)

@@ -95,7 +95,7 @@ CREATE TABLE Dispositivo (
 -- Table Aplicativo
 -- -----------------------------------------------------
 CREATE TABLE Aplicativo (
-  nroRegistro 				INT 			NOT NULL,
+  nroRegistro 				INT 			NOT NULL	auto_increment,
   Empresa_login				VARCHAR(50)		NOT NULL,
   nome 						VARCHAR(20) 	NOT NULL,
   tamanho 					INT 			NOT NULL,

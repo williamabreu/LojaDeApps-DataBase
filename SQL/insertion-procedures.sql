@@ -67,31 +67,29 @@ create procedure insertDispositivo(
     in usuarioLogin varchar(50),
     in sistema varchar(20),
     in modelo varchar(10),
+    in versao varchar(20),
     in certificado bool,
     in controleParental int,
     in updateDisp bool,
     in notificacao bool
 )
 begin
-	insert into Dispositivo values (identificador, usuarioLogin, sistema, modelo, certificado, controleParental, updateDisp, notificacao);
+	insert into Dispositivo values (identificador, usuarioLogin, sistema, modelo, versao, certificado, controleParental, updateDisp, notificacao);
 end //
 
 
 -- Função para inserir novo aplicativo
 
 create procedure insertAplicativo(
-	in nroRegistro int,
 	in empresaLogin varchar(50),
 	in nome varchar(20),
 	in tamanho int,
 	in genero varchar(10),
 	in versao varchar(20),
-	in faixaEtaria int,
-	in downloads int,
-	in nota float
+	in faixaEtaria int
 )
 begin
-	insert into Aplicativo values (nroRegistro, empresaLogin, nome, tamanho, genero, versao, faixaEtaria, downloads, nota);
+	insert into Aplicativo (Empresa_login, nome, tamanho, genero, versao, faixaEtaria, downloads, nota) values (empresaLogin, nome, tamanho, genero, versao, faixaEtaria, 0, NULL);
 end //
 
 
