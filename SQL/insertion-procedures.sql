@@ -95,17 +95,28 @@ end //
 
 -- Função para inserir novo idioma
 
-create procedure insertIdioma(in idioma varchar(20), aplicativoNroRegistro int)
+create procedure insertIdioma(in idioma varchar(20), in nomeApp varchar(20), in loginDev varchar(50))
 begin
-	insert into Idiomas values (idioma, aplicativoNroRegistro);
+	declare nro int;
+    
+    select nroRegistro into nro 
+    from Aplicativo 
+	where Empresa_login = loginDev and nome = nomeApp;
+    
+    insert into Idiomas values (idioma, nro);
 end //
-
 
 -- Função para inserir novo sistema
 
-create procedure insertSistema(in sistema varchar(20), aplicativoNroRegistro int)
+create procedure insertSistema(in sistema varchar(20), in nomeApp varchar(20), in loginDev varchar(50))
 begin
-	insert into Sistemas values (sistema, aplicativoNroRegistro);
+	declare nro int;
+    
+    select nroRegistro into nro 
+    from Aplicativo 
+	where Empresa_login = loginDev and nome = nomeApp;
+    
+	insert into Sistemas values (sistema, nro);
 end //
 
 
