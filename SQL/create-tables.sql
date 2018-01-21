@@ -1,3 +1,9 @@
+/*
+	MySQL script que cria todo o esquema
+    do banco de dados (DDL).
+*/
+
+
 create schema LojaDeApps;
 
 use LojaDeApps;
@@ -144,35 +150,21 @@ CREATE TABLE Sistemas (
 
 
 -- -----------------------------------------------------
--- Table Licenca
+-- Table AdquireLicenca
 -- -----------------------------------------------------
-CREATE TABLE Licenca (
-  registro 					INT 			NOT NULL,
+CREATE TABLE AdquireLicenca (
+  registro 					INT 			NOT NULL	auto_increment,
+  Usuario_login 			VARCHAR(50) 	NOT NULL,
   Aplicativo_nroRegistro 	INT 			NOT NULL,
   tipo 						VARCHAR(20) 	NOT NULL,
   preco 					FLOAT		 		NULL,
+  metodoPag 				VARCHAR(10) 		NULL,
   
-  CONSTRAINT pk_licenca PRIMARY KEY (registro),
+  CONSTRAINT pk_adquire_licenca PRIMARY KEY (registro),
   CONSTRAINT fk_licenca_aplicativo FOREIGN KEY (Aplicativo_nroRegistro)
     REFERENCES Aplicativo (nroRegistro)
     ON DELETE RESTRICT
-    ON UPDATE RESTRICT
-);
-
-
--- -----------------------------------------------------
--- Table Adquire
--- -----------------------------------------------------
-CREATE TABLE Adquire (
-  Licenca_registro 			INT 			NOT NULL,
-  Usuario_login 			VARCHAR(50) 	NOT NULL,
-  metodoPag 				VARCHAR(10) 		NULL,
-  
-  CONSTRAINT pk_adquire PRIMARY KEY (Licenca_registro, Usuario_login),
-  CONSTRAINT fk_adquire_licenca FOREIGN KEY (Licenca_registro)
-    REFERENCES Licenca (registro)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
+    ON UPDATE RESTRICT,
   CONSTRAINT fk_adquire_usuario FOREIGN KEY (Usuario_login)
     REFERENCES Usuario (login)
     ON DELETE CASCADE

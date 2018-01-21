@@ -74,7 +74,8 @@ create procedure insertDispositivo(
     in notificacao bool
 )
 begin
-	insert into Dispositivo values (identificador, usuarioLogin, sistema, modelo, versao, certificado, controleParental, updateDisp, notificacao);
+	insert into Dispositivo 
+    values (identificador, usuarioLogin, sistema, modelo, versao, certificado, controleParental, updateDisp, notificacao);
 end //
 
 
@@ -89,7 +90,8 @@ create procedure insertAplicativo(
 	in faixaEtaria int
 )
 begin
-	insert into Aplicativo (Empresa_login, nome, tamanho, genero, versao, faixaEtaria, downloads, nota) values (empresaLogin, nome, tamanho, genero, versao, faixaEtaria, 0, NULL);
+	insert into Aplicativo (Empresa_login, nome, tamanho, genero, versao, faixaEtaria, downloads, nota) 
+    values (empresaLogin, nome, tamanho, genero, versao, faixaEtaria, 0, NULL);
 end //
 
 
@@ -120,20 +122,28 @@ begin
 end //
 
 
--- Função para inserir nova licença
-
-create procedure insertLicenca(in registro int, in aplicativoNroRegistro int, in tipo varchar(20), in preco float)
-begin
-	insert into Licenca values (registro, aplicativoNroRegistro, tipo, preco);
-end //
-
-
 -- Função para inserir nova transação de adquirir licença
 
-create procedure insertAdquire(in licencaRegistro int, in usuarioLogin varchar(50), in metodoPagamento varchar(10))
+create procedure insertAdquireLicenca(
+	in loginUser varchar(50),
+	in nomeApp varchar(20), 
+    in loginDev varchar(50),
+	in tipo varchar(20),
+	in preco float,
+	in metodoPag varchar(10)
+)
 begin
-	insert into Adquire values (licencaRegistro, usuarioLogin, metodoPagamento);
+    declare appNroRegistro int;
+    
+    select nroRegistro into appNroRegistro
+    from Aplicativo 
+	where Empresa_login = loginDev and nome = nomeApp;
+    
+	insert into AdquireLicenca (Usuario_login, Aplicativo_nroRegistro, tipo, preco, metodoPag) 
+    values (loginUser, appNroRegistro, tipo, preco, metodoPag);
 end //
+
+
 
 
 

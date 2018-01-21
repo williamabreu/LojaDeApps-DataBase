@@ -1,3 +1,10 @@
+/*
+	MySQL script que preenche todas as tabelas
+    do banco de dados com valores válidos
+    gerados.
+*/
+
+
 use LojaDeApps;
 
 
@@ -280,3 +287,108 @@ call insertSistema('linux', 'Journey', 'francomp');
 call insertSistema('android', 'Today Weather', 'tuttistore');
 call insertSistema('ios', 'Today Weather', 'tuttistore');
 call insertSistema('windows', 'Today Weather', 'tuttistore');
+
+
+call insertAdquireLicenca('agata', 'Messenger Lite', 'contron', 'opensource', NULL, NULL);
+call insertAdquireLicenca('agata', 'MagiMobile', 'francomp', 'comercial', 92.99, 'boleto');
+call insertAdquireLicenca('agata', 'Journey', 'francomp', 'comercial', 35.99, 'debito');
+call insertAdquireLicenca('agata', 'Design Circuit', 'microsoft', 'opensource', NULL, NULL);
+call insertAdquireLicenca('agata', 'Socratic', 'extra', 'opensource', NULL, NULL);
+call insertAdquireLicenca('aleixo', 'Sons Relaxantes', 'google', 'freeware', NULL, NULL);
+call insertAdquireLicenca('aleixo', 'MagiMobile', 'francomp', 'comercial', 60.99, 'debito');
+call insertAdquireLicenca('aleixo', 'Design Circuit', 'microsoft', 'freeware', NULL, NULL);
+call insertAdquireLicenca('aleixo', 'Notebook', 'microsoft', 'opensource', NULL, NULL);
+call insertAdquireLicenca('aleixo', 'Journey', 'francomp', 'opensource', NULL, NULL);
+call insertAdquireLicenca('alexandre', 'Governo Federal APP', 'magasyn', 'opensource', NULL, NULL);
+call insertAdquireLicenca('alexandre', 'Socratic', 'extra', 'freeware', NULL, NULL);
+call insertAdquireLicenca('alexandre', 'Medite.se', 'magasyn', 'comercial', 194.99, 'paypal');
+call insertAdquireLicenca('alexandre', 'Dr. Panda Café', 'francomp', 'freeware', NULL, NULL);
+call insertAdquireLicenca('alexandre', 'CastBox', 'compjunior', 'comercial', 172.99, 'debito');
+call insertAdquireLicenca('amanda', 'Cidade Sago Mini', 'francomp', 'comercial', 98.99, 'debito');
+call insertAdquireLicenca('amanda', 'Kwai', 'contron', 'freeware', NULL, NULL);
+call insertAdquireLicenca('amanda', 'Mondly', 'emakers', 'freeware', NULL, NULL);
+call insertAdquireLicenca('amanda', 'Melhores crianças', 'compjunior', 'comercial', 58.99, 'paypal');
+call insertAdquireLicenca('amanda', 'Dr. Panda Café', 'francomp', 'freeware', NULL, NULL);
+call insertAdquireLicenca('arminda', 'Internet Explorer', 'extra', 'comercial', 82.99, 'paypal');
+call insertAdquireLicenca('arminda', 'Facebook', 'compjunior', 'comercial', 20.99, 'bitcoin');
+call insertAdquireLicenca('arminda', 'Docs Explorer', 'tuttistore', 'comercial', 127.99, 'debito');
+call insertAdquireLicenca('arminda', 'Messenger Lite', 'contron', 'comercial', 175.99, 'debito');
+call insertAdquireLicenca('arminda', 'Star Walk 2', 'tuttistore', 'opensource', NULL, NULL);
+call insertAdquireLicenca('catarino', 'Photo Editor', 'center', 'freeware', NULL, NULL);
+call insertAdquireLicenca('catarino', 'Safari', 'pcenter', 'freeware', NULL, NULL);
+call insertAdquireLicenca('catarino', 'Kwai', 'contron', 'freeware', NULL, NULL);
+call insertAdquireLicenca('catarino', 'Discord', 'pcenter', 'opensource', NULL, NULL);
+call insertAdquireLicenca('catarino', 'Governo Federal APP', 'magasyn', 'comercial', 189.99, 'bitcoin');
+call insertAdquireLicenca('cristiano', 'Internet Explorer', 'extra', 'opensource', NULL, NULL);
+call insertAdquireLicenca('cristiano', 'Docs Explorer', 'tuttistore', 'opensource', NULL, NULL);
+call insertAdquireLicenca('cristiano', 'Governo Federal APP', 'magasyn', 'comercial', 29.99, 'debito');
+call insertAdquireLicenca('cristiano', 'Medite.se', 'magasyn', 'freeware', NULL, NULL);
+call insertAdquireLicenca('cristiano', 'Facebook', 'compjunior', 'freeware', NULL, NULL);
+call insertAdquireLicenca('damiao', 'Discord', 'pcenter', 'opensource', NULL, NULL);
+call insertAdquireLicenca('damiao', 'MagiMobile', 'francomp', 'comercial', 30.99, 'boleto');
+call insertAdquireLicenca('damiao', 'SIG estudante', 'pcenter', 'comercial', 33.99, 'credito');
+call insertAdquireLicenca('damiao', 'Today Weather', 'tuttistore', 'freeware', NULL, NULL);
+call insertAdquireLicenca('damiao', 'Notebook', 'microsoft', 'comercial', 166.99, 'debito');
+call insertAdquireLicenca('debora', 'CastBox', 'compjunior', 'freeware', NULL, NULL);
+call insertAdquireLicenca('debora', 'Medite.se', 'magasyn', 'comercial', 108.99, 'credito');
+call insertAdquireLicenca('debora', 'SIG estudante', 'pcenter', 'freeware', NULL, NULL);
+call insertAdquireLicenca('debora', 'Socratic', 'extra', 'freeware', NULL, NULL);
+call insertAdquireLicenca('debora', 'WhatsApp', 'francomp', 'freeware', NULL, NULL);
+call insertAdquireLicenca('fabiola', 'Photo Editor', 'center', 'opensource', NULL, NULL);
+call insertAdquireLicenca('fabiola', 'Airbnb', 'emakers', 'freeware', NULL, NULL);
+call insertAdquireLicenca('fabiola', 'Messenger Lite', 'contron', 'freeware', NULL, NULL);
+call insertAdquireLicenca('fabiola', 'Internet Explorer', 'extra', 'freeware', NULL, NULL);
+call insertAdquireLicenca('fabiola', 'WhatsApp', 'francomp', 'opensource', NULL, NULL);
+call insertAdquireLicenca('gerson', 'Mondly', 'emakers', 'opensource', NULL, NULL);
+call insertAdquireLicenca('gerson', 'Melhores crianças', 'compjunior', 'opensource', NULL, NULL);
+call insertAdquireLicenca('gerson', 'Design Circuit', 'microsoft', 'comercial', 174.99, 'boleto');
+call insertAdquireLicenca('gerson', 'CastBox', 'compjunior', 'opensource', NULL, NULL);
+call insertAdquireLicenca('gerson', 'Tinder', 'compushop', 'opensource', NULL, NULL);
+call insertAdquireLicenca('henriqueta', 'Internet Explorer', 'extra', 'freeware', NULL, NULL);
+call insertAdquireLicenca('henriqueta', 'WhatsApp', 'francomp', 'opensource', NULL, NULL);
+call insertAdquireLicenca('henriqueta', 'Star Walk 2', 'tuttistore', 'freeware', NULL, NULL);
+call insertAdquireLicenca('henriqueta', 'Journey', 'francomp', 'freeware', NULL, NULL);
+call insertAdquireLicenca('henriqueta', 'Socratic', 'extra', 'opensource', NULL, NULL);
+call insertAdquireLicenca('joaquim', 'A Vida na Toca', 'francomp', 'freeware', NULL, NULL);
+call insertAdquireLicenca('joaquim', 'Internet Explorer', 'extra', 'opensource', NULL, NULL);
+call insertAdquireLicenca('joaquim', 'Selfie Camera', 'infotech', 'comercial', 193.99, 'paypal');
+call insertAdquireLicenca('joaquim', 'Medite.se', 'magasyn', 'opensource', NULL, NULL);
+call insertAdquireLicenca('joaquim', 'Tinder', 'compushop', 'freeware', NULL, NULL);
+call insertAdquireLicenca('nicolau', 'Photo Editor', 'center', 'comercial', 100.99, 'bitcoin');
+call insertAdquireLicenca('nicolau', 'Dr. Panda Café', 'francomp', 'opensource', NULL, NULL);
+call insertAdquireLicenca('nicolau', 'Journey', 'francomp', 'opensource', NULL, NULL);
+call insertAdquireLicenca('nicolau', 'Socratic', 'extra', 'comercial', 80.99, 'debito');
+call insertAdquireLicenca('nicolau', 'Mondly', 'emakers', 'opensource', NULL, NULL);
+call insertAdquireLicenca('olavo', 'Cidade Sago Mini', 'francomp', 'freeware', NULL, NULL);
+call insertAdquireLicenca('olavo', 'Messenger Lite', 'contron', 'opensource', NULL, NULL);
+call insertAdquireLicenca('olavo', 'Facebook', 'compjunior', 'comercial', 187.99, 'bitcoin');
+call insertAdquireLicenca('olavo', 'Star Walk 2', 'tuttistore', 'comercial', 144.99, 'paypal');
+call insertAdquireLicenca('olavo', 'CastBox', 'compjunior', 'comercial', 26.99, 'boleto');
+call insertAdquireLicenca('ricardo', 'Safari', 'pcenter', 'comercial', 165.99, 'paypal');
+call insertAdquireLicenca('ricardo', 'WhatsApp', 'francomp', 'comercial', 86.99, 'credito');
+call insertAdquireLicenca('ricardo', 'Socratic', 'extra', 'opensource', NULL, NULL);
+call insertAdquireLicenca('ricardo', 'Sons Relaxantes', 'google', 'comercial', 26.99, 'paypal');
+call insertAdquireLicenca('ricardo', 'Dr. Panda Café', 'francomp', 'freeware', NULL, NULL);
+call insertAdquireLicenca('solano', 'Tinder', 'compushop', 'freeware', NULL, NULL);
+call insertAdquireLicenca('solano', 'CastBox', 'compjunior', 'freeware', NULL, NULL);
+call insertAdquireLicenca('solano', 'Mondly', 'emakers', 'comercial', 103.99, 'boleto');
+call insertAdquireLicenca('solano', 'Discord', 'pcenter', 'comercial', 52.99, 'paypal');
+call insertAdquireLicenca('solano', 'Internet Explorer', 'extra', 'comercial', 91.99, 'credito');
+call insertAdquireLicenca('valerio', 'WhatsApp', 'francomp', 'opensource', NULL, NULL);
+call insertAdquireLicenca('valerio', 'Facebook', 'compjunior', 'comercial', 90.99, 'paypal');
+call insertAdquireLicenca('valerio', 'Socratic', 'extra', 'freeware', NULL, NULL);
+call insertAdquireLicenca('valerio', 'Today Weather', 'tuttistore', 'opensource', NULL, NULL);
+call insertAdquireLicenca('valerio', 'Design Circuit', 'microsoft', 'opensource', NULL, NULL);
+call insertAdquireLicenca('virginia', 'Socratic', 'extra', 'opensource', NULL, NULL);
+call insertAdquireLicenca('virginia', 'Kwai', 'contron', 'freeware', NULL, NULL);
+call insertAdquireLicenca('virginia', 'CastBox', 'compjunior', 'freeware', NULL, NULL);
+call insertAdquireLicenca('virginia', 'MagiMobile', 'francomp', 'comercial', 186.99, 'credito');
+call insertAdquireLicenca('virginia', 'SIG estudante', 'pcenter', 'opensource', NULL, NULL);
+call insertAdquireLicenca('zambaldina', 'Safari', 'pcenter', 'opensource', NULL, NULL);
+call insertAdquireLicenca('zambaldina', 'Medite.se', 'magasyn', 'comercial', 147.99, 'credito');
+call insertAdquireLicenca('zambaldina', 'Mondly', 'emakers', 'opensource', NULL, NULL);
+call insertAdquireLicenca('zambaldina', 'Journey', 'francomp', 'freeware', NULL, NULL);
+call insertAdquireLicenca('zambaldina', 'Governo Federal APP', 'magasyn', 'opensource', NULL, NULL);
+
+
+

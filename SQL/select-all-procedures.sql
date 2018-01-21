@@ -74,19 +74,11 @@ begin
 end //
 
 
--- Função para listar todo o conteúdo da tabela licenca
+-- Função para listar todo o conteúdo da tabela adquire licenças
 
-create procedure getLicencas()
+create procedure getAdquireLicencas()
 begin
-	select * from Licenca;
-end //
-
-
--- Função para listar todo o conteúdo da tabela adquire
-
-create procedure getAdquires()
-begin
-	select * from Adquire;
+	select * from AdquireLicenca;
 end //
 
 
