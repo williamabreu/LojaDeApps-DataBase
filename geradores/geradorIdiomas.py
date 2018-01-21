@@ -10,6 +10,6 @@ for line in arq:
 	print("call insertIdioma('en-US', '{0}', '{1}');".format(app, dev))
 	
 	if i % 3 == 0:
-		print("call insertIdioma('pt-US', '{0}', '{1}');".format(app, dev))
+		print("call insertIdioma('pt-BR', '{0}', '{1}');".format(app, dev))
 	
 	i += 1

@@ -160,43 +160,43 @@ call insertAplicativo('tuttistore', 'Today Weather', 64542400, 'notícia', 'v38.
 
 
 call insertIdioma('en-US', 'Facebook', 'compjunior');
-call insertIdioma('pt-US', 'Facebook', 'compjunior');
+call insertIdioma('pt-BR', 'Facebook', 'compjunior');
 call insertIdioma('en-US', 'WhatsApp', 'francomp');
 call insertIdioma('en-US', 'Tinder', 'compushop');
 call insertIdioma('en-US', 'Internet Explorer', 'extra');
-call insertIdioma('pt-US', 'Internet Explorer', 'extra');
+call insertIdioma('pt-BR', 'Internet Explorer', 'extra');
 call insertIdioma('en-US', 'Safari', 'pcenter');
 call insertIdioma('en-US', 'Docs Explorer', 'tuttistore');
 call insertIdioma('en-US', 'Design Circuit', 'microsoft');
-call insertIdioma('pt-US', 'Design Circuit', 'microsoft');
+call insertIdioma('pt-BR', 'Design Circuit', 'microsoft');
 call insertIdioma('en-US', 'Discord', 'pcenter');
 call insertIdioma('en-US', 'SIG estudante', 'pcenter');
 call insertIdioma('en-US', 'Governo Federal APP', 'magasyn');
-call insertIdioma('pt-US', 'Governo Federal APP', 'magasyn');
+call insertIdioma('pt-BR', 'Governo Federal APP', 'magasyn');
 call insertIdioma('en-US', 'Socratic', 'extra');
 call insertIdioma('en-US', 'Airbnb', 'emakers');
 call insertIdioma('en-US', 'CastBox', 'compjunior');
-call insertIdioma('pt-US', 'CastBox', 'compjunior');
+call insertIdioma('pt-BR', 'CastBox', 'compjunior');
 call insertIdioma('en-US', 'Medite.se', 'magasyn');
 call insertIdioma('en-US', 'Sons Relaxantes', 'google');
 call insertIdioma('en-US', 'Melhores crianças', 'compjunior');
-call insertIdioma('pt-US', 'Melhores crianças', 'compjunior');
+call insertIdioma('pt-BR', 'Melhores crianças', 'compjunior');
 call insertIdioma('en-US', 'Star Walk 2', 'tuttistore');
 call insertIdioma('en-US', 'Mondly', 'emakers');
 call insertIdioma('en-US', 'Cidade Sago Mini', 'francomp');
-call insertIdioma('pt-US', 'Cidade Sago Mini', 'francomp');
+call insertIdioma('pt-BR', 'Cidade Sago Mini', 'francomp');
 call insertIdioma('en-US', 'A Vida na Toca', 'francomp');
 call insertIdioma('en-US', 'Dr. Panda Café', 'francomp');
 call insertIdioma('en-US', 'Messenger Lite', 'contron');
-call insertIdioma('pt-US', 'Messenger Lite', 'contron');
+call insertIdioma('pt-BR', 'Messenger Lite', 'contron');
 call insertIdioma('en-US', 'Photo Editor', 'center');
 call insertIdioma('en-US', 'Kwai', 'contron');
 call insertIdioma('en-US', 'MagiMobile', 'francomp');
-call insertIdioma('pt-US', 'MagiMobile', 'francomp');
+call insertIdioma('pt-BR', 'MagiMobile', 'francomp');
 call insertIdioma('en-US', 'Selfie Camera', 'infotech');
 call insertIdioma('en-US', 'Notebook', 'microsoft');
 call insertIdioma('en-US', 'Journey', 'francomp');
-call insertIdioma('pt-US', 'Journey', 'francomp');
+call insertIdioma('pt-BR', 'Journey', 'francomp');
 call insertIdioma('en-US', 'Today Weather', 'tuttistore');
 
 
