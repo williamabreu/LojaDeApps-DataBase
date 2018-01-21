@@ -1,8 +1,16 @@
 /*
+	GCC214 - Banco de Dados - 2017/2
+	Loja De Apps
+	
+	@author Rafael Takehara
+	@author Tarik Esmin
+	@author	William Abreu
+	
 	MySQL script com todos os storage procedures
     que fazem a inserção de linhas em todas as
     tabelas do banco de dados.
 */
+
 
 use LojaDeApps;
 
@@ -141,10 +149,11 @@ begin
     
 	insert into AdquireLicenca (Usuario_login, Aplicativo_nroRegistro, tipo, preco, metodoPag) 
     values (loginUser, appNroRegistro, tipo, preco, metodoPag);
+    
+    update Aplicativo 
+    set downloads = downloads + 1
+    where nroRegistro = appNroRegistro;
 end //
-
-
-
 
 
 delimiter ;

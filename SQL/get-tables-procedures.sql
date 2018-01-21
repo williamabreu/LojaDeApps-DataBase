@@ -1,9 +1,16 @@
 /*
+	GCC214 - Banco de Dados - 2017/2
+	Loja De Apps
+	
+	@author Rafael Takehara
+	@author Tarik Esmin
+	@author	William Abreu
+	
 	MySQL script contendo todos os storage procedures
     que obtêm todas as linhas de uma dada tabela do 
-    banco de dados. 
-    (Simplificaçãoes do "select * from ...")
+    banco de dados. Simplificaçãoes do "select * from ..."
 */
+
 
 use LojaDeApps;
 
@@ -12,7 +19,7 @@ delimiter //
 
 -- Função para listar todo o conteúdo da tabela usuário
 
-create procedure getUsuarios()
+create procedure getTableUsuario()
 begin
 	select * from Usuario;
 end //
@@ -20,7 +27,7 @@ end //
 
 -- Função para listar todo o conteúdo da tabela empresa
 
-create procedure getEmpresas()
+create procedure getTableEmpresa()
 begin
 	select * from Empresa;
 end //
@@ -28,7 +35,7 @@ end //
 
 -- Função para listar todo o conteúdo da tabela telefones
 
-create procedure getTelefones()
+create procedure getTableTelefones()
 begin
 	select * from Telefones;
 end //
@@ -36,7 +43,7 @@ end //
 
 -- Função para listar todo o conteúdo da tabela emails
 
-create procedure getEmails()
+create procedure getTableEmails()
 begin
 	select * from Emails;
 end //
@@ -44,23 +51,23 @@ end //
 
 -- Função para listar todo o conteúdo da tabela dispositivo
 
-create procedure getDispositivos()
+create procedure getTableDispositivo()
 begin
 	select * from Dispositivo;
 end //
 
 
-
 -- Função para listar todo o conteúdo da tabela aplicativo
 
-create procedure getAplicativos()
+create procedure getTableAplicativo()
 begin
 	select * from Aplicativo;
 end //
 
+
 -- Função para listar todo o conteúdo da tabela idiomas
 
-create procedure getIdiomas()
+create procedure getTableIdiomas()
 begin
 	select * from Idiomas;
 end //
@@ -68,20 +75,19 @@ end //
 
 -- Função para listar todo o conteúdo da tabela sistemas
 
-create procedure getSistemas()
+create procedure getTableSistemas()
 begin
 	select * from Sistemas;
 end //
 
 
--- Função para listar todo o conteúdo da tabela adquire licenças
+-- Função para listar todo o conteúdo da tabela adquirelicencas
 
-create procedure getAdquireLicencas()
+create procedure getTableAdquireLicenca()
 begin
 	select * from AdquireLicenca;
 end //
 
 
-
-
 delimiter ;
+

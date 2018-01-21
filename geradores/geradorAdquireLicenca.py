@@ -33,7 +33,7 @@ from random import randint
 
 tipos = ['comercial', 'freeware', 'opensource']
 metodos = ['credito', 'debito', 'boleto', 'paypal', 'bitcoin']
-
+'''
 while users != []:
 	meusApps = []
 	user = users.pop(0)	
@@ -52,3 +52,5 @@ while users != []:
 		print( "call insertAdquireLicenca('{0}', '{1}', '{2}', '{3}', {4}, {5});".format(user, app.nome, app.dev, tipo, preco, metodo) )
 
 
+'''
+print(len(users)*5)

@@ -1,4 +1,11 @@
 /*
+	GCC214 - Banco de Dados - 2017/2
+	Loja De Apps
+	
+	@author Rafael Takehara
+	@author Tarik Esmin
+	@author	William Abreu
+	
 	MySQL script que preenche todas as tabelas
     do banco de dados com valores válidos
     gerados.
