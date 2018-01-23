@@ -1,11 +1,10 @@
 <?php 
-	header("Content-Type: text/html; charset=iso-8859-1", true); 
+	header("Content-Type: text/html; charset=UTF-8", true); 
 	include("./functions.php");
 ?>
 
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 		<title>Loja de Apps</title>
 	</head>
 	
@@ -56,6 +55,12 @@
 				<?php
 				if (! isset($_GET['login'])) {
 					?>
+					<tr>
+						<td>Login:</td>
+						<td colspan="2">
+							<input type="text" name="login" value="" maxlength="50" size="50">
+						</td>
+					</tr>
 					<tr>
 						<td>Senha:</td>
 						<td>

@@ -1,17 +1,16 @@
 <?php 
-	header("Content-Type: text/html; charset=iso-8859-1", true); 
+	header("Content-Type: text/html; charset=UTF-8", true); 
 	include("./functions.php");
 ?>
 
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 		<title>Loja de Apps</title>
 	</head>
 
 	<body>
 		<center>
-			<h2>Tabela de Usuários</h2>
+			<h2>Tabela de UsuÃ¡rios</h2>
 		</center>
 		
 		<form name="form1" method="POST" action="form-incluir.php">		
@@ -28,7 +27,7 @@
 				
 				if (mysqli_num_rows($tabela) == 0) {
 					?>
-					<tr><td align="center">Tabela está vazia.</td></tr>
+					<tr><td align="center">Tabela estÃ¡ vazia.</td></tr>
 					<tr bgcolor="grey"><td height="5"></td></tr>
 					<tr><td align="center"><input type="submit" value="Add Novo"></td></tr>
 					<?php
@@ -40,8 +39,8 @@
 						<td width="20%"><b><center>E-mail</center></b></td>
 						<td width="12%"><b><center>Nascimento</center></b></td>
 						<td width="13%"><b><center>Tipo de conta</center></b></td>
-						<td width="10%"><b><center>Crédito</center></b></td>
-						<td width="20%"><b><center>Opções</center></b></td>
+						<td width="10%"><b><center>CrÃ©dito</center></b></td>
+						<td width="20%"><b><center>OpÃ§Ãµes</center></b></td>
 					</tr>
 					<?php
 					while ($dados = mysqli_fetch_row($tabela)) {						
