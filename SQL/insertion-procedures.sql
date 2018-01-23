@@ -150,9 +150,7 @@ begin
 	insert into AdquireLicenca (Usuario_login, Aplicativo_nroRegistro, tipo, preco, metodoPag) 
     values (loginUser, appNroRegistro, tipo, preco, metodoPag);
     
-    update Aplicativo 
-    set downloads = downloads + 1
-    where nroRegistro = appNroRegistro;
+    
 end //
 
 
