@@ -1,4 +1,4 @@
-/*
+ /*
 	GCC214 - Banco de Dados - 2017/2
 	Loja De Apps
 	
@@ -65,6 +65,47 @@ begin
 end //
 
 
+
+create procedure setNotaMaiorPreco(in notaref float)
+begin
+
+	update Aplicativo
+	set nota = notaref
+	where nota is null and nroRegistro in (select Aplicativo_nroRegistro from AdquireLicenca			
+										   where preco >= all ( select preco from AdquireLicenca
+															 where preco is not null));
+end // 
+
+
+create procedure setVersaoSistema(in versaoNova varchar(20), in sistemaDesejado varchar(20)) 
+begin
+	
+    update Dispositivo
+	set versao = versaoNova
+    where sistema = sistemaDesajado;
+end //
+
+
+update Dispositivo
+set controleParental = false
+where  Usuario_login in (select login from Usuario where (datediff(curdate(), Usuario.dataNasce)/365.25) >= 18);
+
+update Empresa
+set nome = concat(nome,' ', pais)
+where Empresa.login in (select Empresa_login from Aplicativo group by Empresa_login having count(*) > 2);
+
+update AdquireLicenca
+set preco = preco*1.10
+where Aplicativo_nroRegistro in (select nroRegistro from Aplicativo
+							where downloads > 5);
+
+
+call setNotaMaiorPreco(3.5); 
+
+                            
+select *
+from Empresa;
+                            											
 delimiter ;
 
 

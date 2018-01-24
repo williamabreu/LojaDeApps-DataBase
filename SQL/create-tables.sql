@@ -92,7 +92,7 @@ CREATE TABLE Dispositivo (
   versao 					VARCHAR(20) 	NOT NULL,
   modelo 					VARCHAR(10) 	NOT NULL,
   certificado 				BOOLEAN 		NOT NULL,
-  controleParental 			INT 				NULL,
+  controleParental 			BOOLEAN 		NOT	NULL,
   updateDisp 				BOOLEAN 		NOT NULL,
   notificacao 				BOOLEAN		 	NOT NULL,
   
@@ -102,10 +102,6 @@ CREATE TABLE Dispositivo (
     ON DELETE RESTRICT
     ON UPDATE RESTRICT
 );
-
-
-ALTER TABLE Dispositivo
-	ADD CONSTRAINT ck_idade CHECK (controleParental in (NULL, 10, 12, 14, 16, 18));
 
 
 CREATE TABLE Aplicativo (

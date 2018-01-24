@@ -120,19 +120,19 @@ call insertEmail('suporte@tuttistore.com', 'tuttistore');
 call insertEmail('tuttistore@tuttistore.com', 'tuttistore');
 
 
-call insertDispositivo('galaxy-pocket-1', 'cristiano', 'os x', 'galaxy', '2018.1.70', False, 18, False, True);
-call insertDispositivo('galaxy-pocket-1', 'aleixo', 'os x', 'galaxy', '2018.1.94', True, NULL, False, True);
-call insertDispositivo('moto-g5-151359', 'catarino', 'os x', 'moto', '2018.1.64', True, 18, True, True);
-call insertDispositivo('moto-e4-151359', 'debora', 'windows', 'moto', '2018.1.60', True, NULL, False, True);
-call insertDispositivo('moto-g5-151359', 'olavo', 'android', 'moto', '2018.1.26', True, NULL, True, True);
-call insertDispositivo('galaxy-pocket-1', 'valerio', 'android', 'galaxy', '2018.1.85', True, 14, True, True);
-call insertDispositivo('galaxy-pocket-1', 'solano', 'windows', 'galaxy', '2018.1.33', True, 18, True, False);
-call insertDispositivo('galaxy-s7-15135', 'nicolau', 'windows', 'galaxy', '2018.1.119', True, 10, True, True);
-call insertDispositivo('moto-e4-151359', 'fabiola', 'android', 'moto', '2018.1.22', True, 18, True, True);
-call insertDispositivo('moto-g5-151359', 'amanda', 'windows', 'moto', '2018.1.38', True, NULL, False, False);
-call insertDispositivo('galaxy-s7-15135', 'ricardo', 'android', 'galaxy', '2018.1.23', True, 10, True, False);
-call insertDispositivo('moto-g5-151359', 'arminda', 'ios', 'moto', '2018.1.81', False, 12, False, True);
-call insertDispositivo('moto-g5-151359', 'nicolau', 'windows', 'moto', '2018.1.84', True, 10, False, True);
+call insertDispositivo('galaxy-pocket-1', 'cristiano', 'os x', 'galaxy', '2018.1.70', False, True, False, True);
+call insertDispositivo('galaxy-pocket-1', 'aleixo', 'os x', 'galaxy', '2018.1.94', True, False, False, True);
+call insertDispositivo('moto-g5-151359', 'catarino', 'os x', 'moto', '2018.1.64', True, True, True, True);
+call insertDispositivo('moto-e4-151359', 'debora', 'windows', 'moto', '2018.1.60', True, False, False, True);
+call insertDispositivo('moto-g5-151359', 'olavo', 'android', 'moto', '2018.1.26', True, False, True, True);
+call insertDispositivo('galaxy-pocket-1', 'valerio', 'android', 'galaxy', '2018.1.85', True, True, True, True);
+call insertDispositivo('galaxy-pocket-1', 'solano', 'windows', 'galaxy', '2018.1.33', True, True, True, False);
+call insertDispositivo('galaxy-s7-15135', 'nicolau', 'windows', 'galaxy', '2018.1.119', True, True, True, True);
+call insertDispositivo('moto-e4-151359', 'fabiola', 'android', 'moto', '2018.1.22', True, False, True, True);
+call insertDispositivo('moto-g5-151359', 'amanda', 'windows', 'moto', '2018.1.38', True, False, False, False);
+call insertDispositivo('galaxy-s7-15135', 'ricardo', 'android', 'galaxy', '2018.1.23', True, True, True, False);
+call insertDispositivo('moto-g5-151359', 'arminda', 'ios', 'moto', '2018.1.81', False, False, False, True);
+call insertDispositivo('moto-g5-151359', 'nicolau', 'windows', 'moto', '2018.1.84', True, True, False, True);
 
 
 call insertAplicativo('compjunior', 'Facebook', 3803337, 'redeSocial', 'v28.80', 12);

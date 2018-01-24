@@ -1,6 +1,5 @@
 use LojaDeApps;
 
-drop procedure ObtemListaEmailUsuario;
 
 -- Procedure cria uma lista de emails de todos os usarios cadastrados, separando-os por ;
 
@@ -37,7 +36,10 @@ BEGIN
 END // 
 DELIMITER ; 
 
-SET listaEmailUsuarios = "";
-CALL ObtemListaEmailUsuario(listaEmailUsuarios);
-SELECT listaEmailUsuarios;
+SET @listaEmailUsuarios = '';
+CALL ObtemListaEmailUsuario(@listaEmailUsuarios);
+SELECT @listaEmailUsuarios;
+
+drop procedure ObtemListaEmailUsuario;
+
 

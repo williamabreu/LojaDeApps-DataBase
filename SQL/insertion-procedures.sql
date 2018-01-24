@@ -77,7 +77,7 @@ create procedure insertDispositivo(
     in modelo varchar(10),
     in versao varchar(20),
     in certificado bool,
-    in controleParental int,
+    in controleParental bool,
     in updateDisp bool,
     in notificacao bool
 )
