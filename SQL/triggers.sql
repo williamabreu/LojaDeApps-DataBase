@@ -78,6 +78,66 @@ begin
 end //
 delimiter ;
 
+delimiter //
+
+create trigger before_insert_usuario
+before insert on Usuario
+for each row
+begin
+	if (not new.tipo in ('individual', 'familiar', 'estudante')) then
+		signal sqlstate '45000' SET message_text = 'Coluna tipo inválida.';
+	elseif (not new.email like '%@%.%') then
+		signal sqlstate '45000' SET message_text = 'Coluna email inválida.';
+    end if;
+end //
+
+
+create trigger before_insert_telefone
+before insert on Telefone
+for each row
+begin
+	if (not new.telefone like '+% % %-%') then
+		signal sqlstate '45000' SET message_text = 'Coluna telefone inválida.';
+    end if;
+end //
+
+
+create trigger before_insert_email
+before insert on Emails
+for each row
+begin
+	if (not new.email like '%@%.%') then
+		signal sqlstate '45000' SET message_text = 'Coluna email inválida.';
+    end if;
+end //
+
+
+create trigger before_insert_aplicativo
+before insert on Aplicativo
+for each row
+begin
+	if (not new.faixaEtaria in (NULL, 10, 12, 14, 16, 18)) then
+		signal sqlstate '45000' SET message_text = 'Coluna faixaEtaria inválida.';
+    end if;
+end //
+
+
+create trigger before_insert_adquire_licenca
+before insert on AdquireLicenca
+for each row
+begin
+	if (not new.tipo in ('comercial', 'freeware', 'opensource')) then
+		signal sqlstate '45000' SET message_text = 'Coluna tipo inválida.';
+    end if;
+end //
+
+
+
+delimiter ;
+
+
+
+
 
 
 

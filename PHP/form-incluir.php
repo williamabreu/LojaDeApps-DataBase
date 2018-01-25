@@ -1,4 +1,13 @@
 <?php 
+	/*
+		GCC214 - Banco de Dados - 2017/2
+		Loja De Apps
+
+		@author Rafael Takehara
+		@author Tarik Esmin
+		@author	William Abreu
+	*/
+	
 	header("Content-Type: text/html; charset=UTF-8", true); 
 	include("./functions.php");
 ?>

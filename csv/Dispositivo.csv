@@ -1,0 +1,14 @@
+identificador,Usuario_login,sistema,versao,modelo,certificado,controleParental,updateDisp,notificacao
+galaxy-pocket-1,aleixo,"os x",galaxy,2018.1.94,1,0,0,1
+galaxy-pocket-1,cristiano,"os x",galaxy,2018.1.70,0,1,0,1
+galaxy-pocket-1,solano,windows,galaxy,2018.1.33,1,1,1,0
+galaxy-pocket-1,valerio,android,galaxy,2018.1.85,1,1,1,1
+galaxy-s7-15135,nicolau,windows,galaxy,2018.1.119,1,1,1,1
+galaxy-s7-15135,ricardo,android,galaxy,2018.1.23,1,1,1,0
+moto-e4-151359,debora,windows,moto,2018.1.60,1,0,0,1
+moto-e4-151359,fabiola,android,moto,2018.1.22,1,0,1,1
+moto-g5-151359,amanda,windows,moto,2018.1.38,1,0,0,0
+moto-g5-151359,arminda,ios,moto,2018.1.81,0,0,0,1
+moto-g5-151359,catarino,"os x",moto,2018.1.64,1,1,1,1
+moto-g5-151359,nicolau,windows,moto,2018.1.84,1,1,0,1
+moto-g5-151359,olavo,android,moto,2018.1.26,1,0,1,1

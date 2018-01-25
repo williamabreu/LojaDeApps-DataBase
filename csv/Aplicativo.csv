@@ -1,0 +1,30 @@
+nroRegistro,Empresa_login,nome,tamanho,genero,versao,faixaEtaria,downloads,nota
+1,compjunior,Facebook,3803337,redeSocial,v28.80,12,4,NULL
+2,francomp,WhatsApp,32237630,mensagem,v5.126,10,5,NULL
+3,compushop,Tinder,46584681,namoro,v39.37,18,3,NULL
+4,extra,"Internet Explorer",52251084,internet,v24.64,NULL,6,NULL
+5,pcenter,Safari,27349884,internet,v45.148,NULL,3,NULL
+6,tuttistore,"Docs Explorer",23053014,arquivos,v41.52,NULL,2,NULL
+7,microsoft,"Design Circuit",10814633,ciencia,v26.87,NULL,4,NULL
+8,pcenter,Discord,15913705,mensagem,v22.54,14,3,NULL
+9,pcenter,"SIG estudante",37779915,educa,v17.51,NULL,3,NULL
+10,magasyn,"Governo Federal APP",79304927,politica,v46.151,NULL,4,NULL
+11,extra,Socratic,44123067,educação,v37.127,16,8,NULL
+12,emakers,Airbnb,27014198,vendas,v26.88,18,1,NULL
+13,compjunior,CastBox,57618221,NULL,v48.13,12,6,NULL
+14,magasyn,Medite.se,43010255,conforto,v11.23,NULL,5,NULL
+15,google,"Sons Relaxantes",66353524,conforto,v24.53,NULL,2,NULL
+16,compjunior,"Melhores crianças",49712318,NULL,v36.106,NULL,2,NULL
+17,tuttistore,"Star Walk 2",56570488,jogo,v25.58,10,3,NULL
+18,emakers,Mondly,38389366,NULL,v18.123,NULL,5,NULL
+19,francomp,"Cidade Sago Mini",32290538,jogo,v43.140,10,2,NULL
+20,francomp,"A Vida na Toca",62348433,educação,v2.85,NULL,1,NULL
+21,francomp,"Dr. Panda Café",40577385,educação,v35.46,NULL,4,NULL
+22,contron,"Messenger Lite",10708990,mensagens,v45.125,12,4,NULL
+23,center,"Photo Editor",9373181,imagem,v17.35,NULL,3,NULL
+24,contron,Kwai,48867601,NULL,v42.4,14,3,NULL
+25,francomp,MagiMobile,35437909,imagem,v15.63,NULL,4,NULL
+26,infotech,"Selfie Camera",22634387,imagem,v38.14,12,1,NULL
+27,microsoft,Notebook,73515798,texto,v42.150,NULL,2,NULL
+28,francomp,Journey,51876310,notícia,v30.48,12,5,NULL
+29,tuttistore,"Today Weather",64542400,notícia,v38.47,10,2,NULL

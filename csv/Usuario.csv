@@ -1,0 +1,21 @@
+login,email,senha,nome,tipo,credito,dataNasce
+agata,agata@ufla.br,ebdba27158814f138653e9616dba5605,"Agata Ribas",estudante,186.63,2004-01-09
+aleixo,aleixo@ufla.br,21969d045230cf59f32cc76f5e31f353,"Aleixo Velasques",familiar,77.23,1963-03-26
+alexandre,alexandre@ufla.br,999facde46924f5096a3bc2b7d4f55ac,"Alexandre Frota",familiar,448.07,2002-02-10
+amanda,amanda@ufla.br,10d67dee91d3231c07b9ae67e1c0351b,"Amanda Nuds",individual,389.19,1982-08-20
+arminda,arminda@ufla.br,674a58e52c1c544cc92790912e9b2b97,"Arminda Simão",familiar,317.85,2006-04-17
+catarino,catarino@ufla.br,12f37fc09f6fe61efaf9645eef1b0e15,"Catarino Coelho",estudante,50.24,1972-02-15
+cristiano,cristiano@ufla.br,6456996f7220aacf38d00086bb2422da,"Cristiano Ribas",individual,40.43,1988-07-23
+damiao,damiao@ufla.br,2ac08d4564ccdbd8118d5cea4ae663c3,"Damiao Frade",estudante,226.26,1976-01-11
+debora,debora@ufla.br,c78418f8be820134d09250afd78bac60,"Debora Ferro",individual,469.21,2007-05-14
+fabiola,fabiola@ufla.br,7cc8f160855a391a81b31d5d4cf7c54f,"Fabiola Harém",individual,436.06,1966-07-03
+gerson,gerson@ufla.br,e8f294311988d1c60666426b92afd0a7,"Gerson Hernandes",familiar,160.74,1993-08-13
+henriqueta,henriqueta@ufla.br,3e50cf82b749a983f29b021a46e8cd30,"Henriqueta Ribeiro",familiar,416.8,1982-01-12
+joaquim,joaquim@ufla.br,b4108d092eb93b6ea6756c85b783834e,"Joaquim Grandíssimo",familiar,341.4,1976-10-25
+nicolau,nicolau@ufla.br,e68b41d41b84591ed4b9e3aff07b862d,"Nicolau Barroso",individual,403.77,1986-05-22
+olavo,olavo@ufla.br,1a75310ab7c70de6b979e5750d20dae5,"Olavo Docarvalho",estudante,364.79,1976-04-22
+ricardo,ricardo@ufla.br,c9121a4e890f5be993a97aec577bec7c,"Ricardo Planeta",individual,403.8,2012-07-19
+solano,solano@ufla.br,b95550f1a2ec184738471bb90ffcf5f4,"Solano Amado",familiar,102,2003-02-19
+valerio,valerio@ufla.br,d6730c762d60e835d34962ab05959a61,"Valerio Colares",individual,471.89,1960-03-05
+virginia,virginia@ufla.br,b28562dfb5923733443a651391412883,"Virginia Póvoas",familiar,349.57,1980-02-09
+zambaldina,zambaldina@ufla.br,f8d7c359c48c2a49223d8fbce86605c0,"Zambaldina Júdice",familiar,175.37,1967-05-07

@@ -79,7 +79,3 @@ create view UsuariosAplicativos as
 	order by usuario asc;
 
 
-
-
-
-

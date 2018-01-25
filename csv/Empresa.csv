@@ -1,0 +1,16 @@
+login,cnpj,senha,nome,logradouro,numero,bairro,cidade,pais,site
+apple,64.147.7831-47,senha-apple,"Apple Inc.","Avenida Sete de Setembro",21,"Zona Sul","São Paulo",França,apple.com.br
+center,11.526.1597-34,senha-center,"Center Tech","Rua Lúcio Bittencourt",1030,"Zona Sul",Varginha,França,center.com.br
+compjunior,70.590.5759-48,senha-compjunior,Compjunior,"Rodovia dos Metalúrgicos",835,"Zona Sul",Curitiba,França,compjunior.com.br
+compushop,99.345.7850-71,senha-compushop,CompuShop,"Rua Capitão Benedito Lopes Bragança",1436,"Zona Norte",Lavras,Brasil,compushop.com.br
+contron,58.146.7117-94,senha-contron,Contron,"Rodovia dos Metalúrgicos",1243,Centro,"São Paulo",França,contron.com.br
+datacel,78.739.5239-95,senha-datacel,Datacel,"Avenida dos Trabalhadores",362,Centro,Perdões,França,NULL
+emakers,84.924.7733-62,senha-emakers,EMakers,"Estrada Francisco Vilela Arantes",NULL,"Zona Norte",Perdões,França,emakers.com.br
+extra,90.409.4770-36,senha-extra,"Extra Bits","Rua Alberto Pasqualine",390,Centro,Perdões,Austrália,extra.com.br
+francomp,95.306.3237-31,senha-francomp,Francomp,"Rua Alberto Pasqualine",1668,"Zona Norte","São Paulo",França,NULL
+google,93.506.6800-11,senha-google,Google,"Avenida Getúlio Vargas",NULL,"Zona Sul",Lavras,Brasil,google.com.br
+infotech,99.252.2551-65,senha-infotech,InfoTech,"Avenida Sete de Setembro",203,"Zona Leste","Campo Belo",França,infotech.com.br
+magasyn,10.867.6896-45,senha-magasyn,Magasyn,"Estrada da Companhia",331,NULL,Perdões,Brasil,magasyn.com.br
+microsoft,59.567.3569-32,senha-microsoft,Microsoft,"Avenida Lucas Evangelista",NULL,"Zona Sul",Lavras,Brasil,microsoft.com.br
+pcenter,90.275.5158-99,senha-pcenter,"Pcenter Informática","Avenida dos Trabalhadores",428,"Zona Sul",Curitiba,França,NULL
+tuttistore,53.998.2428-38,senha-tuttistore,Tuttistore,"Rua General Oswaldo Pinto da Veiga",473,"Zona Norte","Campo Belo",Austrália,NULL
